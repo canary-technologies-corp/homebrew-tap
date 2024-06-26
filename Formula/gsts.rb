@@ -9,6 +9,16 @@ class Gsts < Formula
 
   depends_on "node"
 
+  patch do
+    url "https://github.com/ruimarinho/gsts/pull/111.patch"
+    sha256 "5c5d3104aa195e083a0e4cbba5fe67adce1990f704e79246e8f4c70548c2945b"
+  end
+
+  patch do
+    url "https://github.com/ruimarinho/gsts/pull/114.patch"
+    sha256 "8d21a09a12047d0db858f455703c69dc9d44b324a8b6288527f991c0f1fc806d"
+  end
+
   def install
     system "npm", "install", *Language::Node.std_npm_install_args(libexec)
     (bin/"gsts").write_env_script libexec/"lib/node_modules/gsts/index.js", PLAYWRIGHT_BROWSERS_PATH: "0"
@@ -18,16 +28,6 @@ class Gsts < Formula
     ENV["PLAYWRIGHT_BROWSERS_PATH"]="0"
 
     system "#{Formula["node"].bin}/node", "#{libexec}/lib/node_modules/gsts/node_modules/playwright/cli.js", "install"
-  end
-
-  patch do
-    url "https://github.com/ruimarinho/gsts/pull/111.patch"
-    sha256 "5c5d3104aa195e083a0e4cbba5fe67adce1990f704e79246e8f4c70548c2945b"
-  end
-
-  patch do
-    url "https://github.com/ruimarinho/gsts/pull/114.patch"
-    sha256 "8d21a09a12047d0db858f455703c69dc9d44b324a8b6288527f991c0f1fc806d"
   end
 
   test do
