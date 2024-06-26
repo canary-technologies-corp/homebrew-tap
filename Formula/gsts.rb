@@ -25,6 +25,11 @@ class Gsts < Formula
     sha256 "5c5d3104aa195e083a0e4cbba5fe67adce1990f704e79246e8f4c70548c2945b"
   end
 
+  patch do
+    url "https://github.com/ruimarinho/gsts/pull/114.patch"
+    sha256 "8d21a09a12047d0db858f455703c69dc9d44b324a8b6288527f991c0f1fc806d"
+  end
+
   test do
     assert_match version.to_s, shell_output("#{bin}/gsts --version")
   end
