@@ -11,22 +11,22 @@ class Gsts < Formula
 
   # https://github.com/ruimarinho/gsts/pull/111
   patch do
-    url "https://github.com/ruimarinho/gsts/commit/f2dfea1e0f3f7c439988b781e861d5ecf1dd9bbb.patch"
-    sha256 "be8f12ff15e4b34e9823571f3afce7f213aaa5dbbd6a78d4b4a271d9476f29d1"
+    url "https://github.com/ruimarinho/gsts/commit/f2dfea1e0f3f7c439988b781e861d5ecf1dd9bbb.patch?full_index=1"
+    sha256 "948fe5540006f570403c93d19af44c2ec2b311800804eb5a3b9a3cdb7dd081c2"
   end
   patch do
-    url "https://github.com/ruimarinho/gsts/commit/668f85ca097b20268382ff8c90ab30fdfd74a28d.patch"
-    sha256 "cf0e2e7174be934a68743575d65d0c37377f5fe8a4b77c3c2426fb1b3fd0b951"
+    url "https://github.com/ruimarinho/gsts/commit/668f85ca097b20268382ff8c90ab30fdfd74a28d.patch?full_index=1"
+    sha256 "fc20c1f569bf50a15083f8cecf6000b87ccb3909035739dce9e5933bb9d29476"
   end
 
   # https://github.com/ruimarinho/gsts/pull/114
   patch do
-    url "https://github.com/ruimarinho/gsts/commit/27250e5c25aaf78998abbc4ad5909d839dd85f18.patch"
-    sha256 "2b97e37023936f917ccac2de87320cd11965ec55ecfb0f1cc14eaa8486334da8"
+    url "https://github.com/ruimarinho/gsts/commit/27250e5c25aaf78998abbc4ad5909d839dd85f18.patch?full_index=1"
+    sha256 "c0c94f809d92a2760ac3db5f6de25b3c3156c1fda4a131f224793a87d42f0f79"
   end
   patch do
-    url "https://github.com/ruimarinho/gsts/commit/3ccd2953ede583cab2aa7eca1a0d4b7aa349bb2f.patch"
-    sha256 "a64f83a815226d4517be2cb6d65e239106309d47c091ae5fa5b9b699919594dc"
+    url "https://github.com/ruimarinho/gsts/commit/3ccd2953ede583cab2aa7eca1a0d4b7aa349bb2f.patch?full_index=1"
+    sha256 "1eaa2fa318f227fde1dd0ec6c9dbe72269867b3bc485b3c270f4be622e575037"
   end
 
   def install
