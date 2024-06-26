@@ -22,7 +22,7 @@ class Gsts < Formula
 
   patch do
     url "https://github.com/ruimarinho/gsts/pull/111.patch"
-    sha256 "be8f12ff15e4b34e9823571f3afce7f213aaa5dbbd6a78d4b4a271d9476f29d1"
+    sha256 "5c5d3104aa195e083a0e4cbba5fe67adce1990f704e79246e8f4c70548c2945b"
   end
 
   test do
