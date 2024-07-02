@@ -1,15 +1,15 @@
-# Kalbasit Tap
+# Canary Technologies Tap
 
 ## How do I install these formulae?
 
-`brew install kalbasit/tap/<formula>`
+`brew install canary-technologies-corp/tap/<formula>`
 
-Or `brew tap kalbasit/tap` and then `brew install <formula>`.
+Or `brew tap canary-technologies-corp/tap` and then `brew install <formula>`.
 
 Or, in a [`brew bundle`](https://github.com/Homebrew/homebrew-bundle) `Brewfile`:
 
 ```ruby
-tap "kalbasit/tap"
+tap "canary-technologies-corp/tap"
 brew "<formula>"
 ```
 
